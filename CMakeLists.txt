@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.21)
+
+project(sgx VERSION 1.0.0)
+
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_UNITY_BUILD ON)
+
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
+add_executable(01-learn ${CMAKE_SOURCE_DIR}/src/01-learn.c)
